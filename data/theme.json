@@ -1,0 +1,8 @@
+{
+  "font_body": "Roboto, sans-serif",
+  "font_heading": "Roboto Slab, serif",
+  "color_accent": "#0277bd",
+  "color_text": "#424242",
+  "color_navbar_bg": "#fafafa",
+  "font_size_base": "16px"
+}

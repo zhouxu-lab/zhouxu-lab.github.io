@@ -1,0 +1,118 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: assets/img/uploads
+public_folder: /assets/img/uploads
+
+collections:
+
+  - name: settings
+    label: Site Settings
+    files:
+
+      - label: About Page
+        name: about
+        file: data/about.json
+        format: json
+        fields:
+          - { label: "Your Name",        name: name,              widget: string }
+          - { label: "Title",            name: title,             widget: string }
+          - { label: "Department",       name: department,        widget: string }
+          - { label: "Department URL",   name: department_url,    widget: string }
+          - { label: "University",       name: university,        widget: string }
+          - { label: "Email",            name: email,             widget: string }
+          - { label: "Google Scholar URL", name: google_scholar_url, widget: string }
+          - { label: "GitHub URL",       name: github_url,        widget: string }
+          - { label: "LinkedIn URL",     name: linkedin_url,      widget: string }
+          - { label: "Profile Photo",    name: photo,             widget: image }
+          - { label: "Bio",              name: bio,               widget: markdown }
+          - { label: "Copyright Year",   name: copyright_year,    widget: string }
+
+      - label: Theme (Fonts & Colors)
+        name: theme
+        file: data/theme.json
+        format: json
+        fields:
+          - { label: "Body Font",         name: font_body,        widget: string, hint: "e.g. Roboto, sans-serif" }
+          - { label: "Heading Font",      name: font_heading,     widget: string, hint: "e.g. Roboto Slab, serif" }
+          - { label: "Accent Color",      name: color_accent,     widget: color }
+          - { label: "Text Color",        name: color_text,       widget: color }
+          - { label: "Navbar Background", name: color_navbar_bg,  widget: color }
+          - { label: "Base Font Size",    name: font_size_base,   widget: string, hint: "e.g. 16px" }
+
+  - name: news
+    label: News
+    files:
+      - label: News Items
+        name: news
+        file: data/news.json
+        format: json
+        fields:
+          - label: Items
+            name: items
+            widget: list
+            fields:
+              - { label: Date,            name: date, widget: string, hint: "e.g. June, 2025" }
+              - { label: Text,            name: text, widget: text }
+              - { label: Link (optional), name: link, widget: string, required: false }
+
+  - name: publications
+    label: Publications
+    files:
+      - label: Publication List
+        name: publications
+        file: data/publications.json
+        format: json
+        fields:
+          - label: Entries
+            name: entries
+            widget: list
+            fields:
+              - { label: Number,     name: number,    widget: number }
+              - { label: Year,       name: year,      widget: number }
+              - { label: Citation,   name: citation,  widget: text, hint: "Use *text* for italics" }
+              - { label: URL or PDF, name: url,       widget: string, required: false }
+              - { label: Link Label, name: url_label, widget: string, default: "[full text]", required: false }
+
+  - name: team
+    label: Team
+    files:
+      - label: Team Members
+        name: team
+        file: data/team.json
+        format: json
+        fields:
+          - label: Principal Investigator
+            name: pi
+            widget: object
+            fields:
+              - { label: Name,       name: name,       widget: string }
+              - { label: Title,      name: title,      widget: string }
+              - { label: Department, name: department, widget: string }
+              - { label: Email,      name: email,      widget: string }
+              - { label: Photo,      name: photo,      widget: image, required: false }
+          - label: Lab Members
+            name: members
+            widget: list
+            fields:
+              - { label: Name,     name: name,     widget: string }
+              - { label: Role,     name: role,     widget: string }
+              - { label: Email,    name: email,    widget: string }
+              - { label: Photo,    name: photo,    widget: image, required: false }
+              - { label: Research, name: research, widget: string }
+
+  - name: positions
+    label: Available Positions
+    files:
+      - label: Position Openings
+        name: positions
+        file: data/positions.json
+        format: json
+        fields:
+          - label: Positions
+            name: positions
+            widget: list
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Body,  name: body,  widget: markdown }
