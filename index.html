@@ -10,6 +10,9 @@
   <!-- Fonts and Icons -->
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons" />
 
+  <!-- Theme -->
+  <link rel="stylesheet" href="/assets/css/theme.css">
+
   <!-- CSS Files (Updated to CDNs for Preview) -->
   <!-- <link rel="stylesheet" href="/assets/css/all.min.css"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -166,66 +169,34 @@
   <div class="content">
     
 
-<div class="col p-0 pt-4 pb-4">
-  <h1 class="title text-left font-weight-bold">Xu Zhou</h1>
-  
-  
-      <h6 class="m-0 mb-2" style="font-size: 0.83em;"><a href="https://foodscience.psu.edu/" class="page-description"      target="_blank">
-    Department of Food Science<br>
-    Pennsylvania State University</a></h6>
-    <p class="mb-0"><i class="fas fa-envelope mr-2"></i><a href="mailto:pxzhou@ucdavis.edu">pxzhou@ucdavis.edu</a></p>
-  
-</div>
+<div id="about-content">
+  <div class="col p-0 pt-4 pb-4">
+    <h1 id="about-name" class="title text-left font-weight-bold">Xu Zhou</h1>
+    <h6 class="m-0 mb-2" style="font-size: 0.83em;">
+      <a id="about-dept" href="https://foodscience.psu.edu/" class="page-description" target="_blank">
+        Department of Food Science<br>Pennsylvania State University
+      </a>
+    </h6>
+    <p class="mb-0"><i class="fas fa-envelope mr-2"></i><a id="about-email" href="mailto:pxzhou@ucdavis.edu">pxzhou@ucdavis.edu</a></p>
+  </div>
 
-<!-- Introduction -->
-
-<div style="display: flex; flex-wrap: wrap;">
+  <div style="display: flex; flex-wrap: wrap;">
     <div class="text-justify p-0">
-        <div class="col-12 col-sm-5 p-0 pt-2 pb-sm-2 pb-4 pl-sm-4 text-center" style="float: right;">
-                             <img class="profile-img img-responsive" src="/assets/img/prof_pic.jpg" />
-        </div>
-
-        <p>
-<section class="about-section">
-  <p>
-    I am an Assistant Professor at Penn State and lead the
-    <strong>Intelligent Food Processing &amp; AI Automation Lab</strong>.
-    Our team integrates <strong>Food Science</strong>, <strong>Engineering</strong>,
-    and <strong>Artificial Intelligence (AI)</strong> to advance next-generation food manufacturing.
-  </p>
-    Our group develops advanced food processing technologies and computational methods for next-generation food manufacturing systems. 
-  Our long-term goal is to enable autonomous, self-driving food engineering laboratories and factories.
-  Currently, we focus on digital twins </strong>(sensing, simulation, human–AI collaboration, and robotics) for food processing and supply chains, with the aim of improving food nutrition, quality, safety, and sustainability.
-</p>
-    Previously, I was a Postdoctoral Scholar at the <a href="https://aifs.ucdavis.edu/" target="_blank">AI Institute for Food Systems</a> (UC Davis) and University of Washington. 
-    I earned my Ph.D. in Food Engineering (advisor: <a href="https://ise.washington.edu/facultyfinder/juming-tang" target="_blank">Dr. Juming Tang</a>) and a bachelor’s degree in Mechanical Engineering.
-  </p>
-    If you are interested in joining us, please check <a class="cta" href="/positions/">Available Positions</a>
-  </p>
-</section>
-
+      <div class="col-12 col-sm-5 p-0 pt-2 pb-sm-2 pb-4 pl-sm-4 text-center" style="float: right;">
+        <img id="about-photo" class="profile-img img-responsive" src="/assets/img/prof_pic.jpg" alt="Profile photo" />
+      </div>
+      <section class="about-section">
+        <div id="about-bio"></div>
+        <p>If you are interested in joining us, please check <a class="cta" href="/positions/">Available Positions</a></p>
+      </section>
+    </div>
+  </div>
+</div>
 
 <!-- News -->
 <div class="news mt-3 p-0">
   <h1 class="title mb-4 p-0">News</h1>
-  
-  
-    <div class="row p-0">
-      <div class="col-sm-2 p-0">
-        <span class="badge light-blue darken-1 font-weight-bold text-uppercase align-middle date ml-3">
-          June, 2025
-        </span>
-      </div>
-      <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">
-        <p>Dr. Xu Zhou will join Food Science, Penn State.
-</p>
-      </div>
-    </div>
-  
-   
-      </div>
-    </div>
-  
+  <div id="news-content"></div>
 </div>
 
 
@@ -255,8 +226,8 @@
   <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
   <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>
   
-  <!-- <script src="/assets/js/common.js"></script> -->
-  <!-- Replaced common.js functionality roughly if needed, usually just tooltips init etc. -->
+  <script src="/assets/js/theme-loader.js"></script>
+  <script src="/assets/js/content-loader.js"></script>
 
   <!-- Scrolling Progress Bar -->
   <script type="text/javascript">

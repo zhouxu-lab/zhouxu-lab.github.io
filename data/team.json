@@ -1,0 +1,39 @@
+{
+  "pi": {
+    "name": "Xu Zhou, Ph.D.",
+    "title": "Assistant Professor",
+    "department": "Department of Food Science, Penn State",
+    "email": "pxzhou@ucdavis.edu",
+    "photo": "/assets/img/prof_pic.jpg"
+  },
+  "members": [
+    {
+      "name": "Member Name",
+      "role": "Postdoctoral Scholar",
+      "email": "email@psu.edu",
+      "photo": "",
+      "research": "[Research Description]"
+    },
+    {
+      "name": "Member Name",
+      "role": "Ph.D. Student",
+      "email": "email@psu.edu",
+      "photo": "",
+      "research": "[Research Description]"
+    },
+    {
+      "name": "Member Name",
+      "role": "Ph.D. Student",
+      "email": "email@psu.edu",
+      "photo": "",
+      "research": "[Research Description]"
+    },
+    {
+      "name": "Member Name",
+      "role": "Master Student",
+      "email": "email@psu.edu",
+      "photo": "",
+      "research": "[Research Description]"
+    }
+  ]
+}
