@@ -1,4 +1,4 @@
-# Xu Zhou's personal webpage
+# Xu Zhou's research group webpage
 
 ## How to use this template for your website
 
