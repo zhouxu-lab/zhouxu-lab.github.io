@@ -107,37 +107,16 @@
     .research-media img,
     .research-media video {
         width: 100%;
-        height: auto;
-        display: block;
-    }
-    .research-media .media-row {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 0;
-    }
-    .research-media .media-row > * {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    .dual-media {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 2px;
-        background-color: #eee;
-    }
-    .dual-media-cell {
+        aspect-ratio: 16 / 9;
+        object-fit: contain;
         background-color: #fafafa;
-        display: flex;
-        flex-direction: column;
-    }
-    .dual-media-cell video,
-    .dual-media-cell img {
-        width: 100%;
-        height: auto;
         display: block;
-        flex: 1;
-        object-fit: cover;
+    }
+    .research-media > img + img,
+    .research-media > video + img,
+    .research-media .media-caption + img,
+    .research-media .media-caption + video {
+        border-top: 1px solid #eee;
     }
     .media-caption {
         font-size: 0.82rem;
@@ -187,9 +166,6 @@
         font-style: italic;
     }
     @media (max-width: 600px) {
-        .research-media .media-row {
-            grid-template-columns: 1fr;
-        }
         .research-body { padding: 1.25rem; }
         .research-title { font-size: 1.3rem; }
     }
@@ -267,120 +243,86 @@
     <!-- 1. AI Agents -->
     <div class="research-card">
       <div class="research-media">
-        <img src="/assets/img/research/ai_agents.png" alt="AI agents architectures: equi-level, hierarchical, and nested structures">
+        <img src="/assets/img/research/ai_agents.png" alt="AI agents: equi-level, hierarchical, and nested structures">
       </div>
       <div class="research-body">
         <h2 class="research-title">1. AI Agents for Food Applications</h2>
 
         <div class="research-section-label">Goal</div>
         <p class="research-text">
-          Design AI agent systems tailored for food science and engineering &mdash; supporting research workflows, decision-making, and knowledge synthesis across food domains.
+          Build AI agent systems tailored for food science research and decision-making.
         </p>
 
         <div class="research-section-label">Approach</div>
         <p class="research-text">
-          We are exploring multi-agent architectures (equi-level, hierarchical, and nested) that coordinate specialized agents to perform complex tasks in food research and development.
+          Multi-agent architectures (equi-level, hierarchical, nested) coordinating specialized agents for food R&amp;D. <em>Papers under review.</em>
         </p>
-
-        <div class="research-status">
-          Manuscripts and proposals are currently under development; multiple papers are under review.
-        </div>
       </div>
     </div>
 
     <!-- 2. Digital Extruder -->
     <div class="research-card">
       <div class="research-media">
-        <img src="/assets/img/research/digital_extruder.png" alt="Digital extruder: raw ingredients to extrusion to simulation and final products">
+        <img src="/assets/img/research/digital_extruder.png" alt="Digital extruder: ingredients to product via simulation">
       </div>
       <div class="research-body">
         <h2 class="research-title">2. Digital Extruder</h2>
 
         <div class="research-section-label">Goal</div>
         <p class="research-text">
-          Build a digital twin of food extrusion processes that links raw-ingredient properties &rarr; process conditions &rarr; final product attributes (texture, flavor, nutrition, bioactives), enabling formulation and process optimization.
+          Digital twin linking ingredients &rarr; process &rarr; product attributes for formulation and process optimization.
         </p>
 
         <div class="research-section-label">Approach</div>
         <p class="research-text">
-          We couple mechanistic multi-physics models (heat transfer, flow, transport) with generative AI and machine-learning surrogates to capture the full extrusion pathway:
+          Mechanistic multi-physics models coupled with generative AI and ML surrogates for fast prediction and closed-loop optimization.
         </p>
-        <div class="research-text">
-          <ul>
-            <li><strong>Sensing &amp; data:</strong> ingredient thermal/rheological/chemical properties and in-line process data.</li>
-            <li><strong>Modeling:</strong> mechanistic digital twins coupled with generative AI and ML surrogates (NN, XGBoost, SVM) for fast prediction.</li>
-            <li><strong>Optimization:</strong> closed-loop insights and feedback to improve product quality and reduce trial-and-error.</li>
-          </ul>
-        </div>
       </div>
     </div>
 
     <!-- 3. Microwave and RF Heating -->
     <div class="research-card">
       <div class="research-media">
-        <div class="dual-media">
-          <div class="dual-media-cell">
-            <video controls preload="metadata" poster="/assets/img/research/maps_poster.jpg" muted playsinline>
-              <source src="/assets/img/research/maps.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-            <div class="media-caption">Microwave: MAPS digital twin</div>
-          </div>
-          <div class="dual-media-cell">
-            <img src="/assets/img/research/rf.jpg" alt="Radio-frequency drying">
-            <div class="media-caption">RF drying: system &amp; simulation</div>
-          </div>
-        </div>
+        <video autoplay loop muted playsinline poster="/assets/img/research/maps_poster.jpg">
+          <source src="/assets/img/research/maps.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="media-caption">Microwave-assisted thermal pasteurization (MAPS) digital twin</div>
+        <img src="/assets/img/research/rf.jpg" alt="Radio-frequency drying">
+        <div class="media-caption">Radio-frequency (RF) drying: system &amp; simulation</div>
       </div>
       <div class="research-body">
-        <h2 class="research-title">3. Microwave and RF Heating</h2>
+        <h2 class="research-title">3. Microwave &amp; RF Heating</h2>
 
         <div class="research-section-label">Goal</div>
         <p class="research-text">
-          Design uniform, energy-efficient electromagnetic heating systems for food pasteurization, sterilization, and drying &mdash; replacing slow, energy-intensive conventional thermal processes.
+          Uniform, energy-efficient electromagnetic heating for pasteurization, sterilization, and drying.
         </p>
 
         <div class="research-section-label">Approach</div>
         <p class="research-text">
-          We combine pilot-scale physical systems with computer-simulation digital twins to predict and improve heating uniformity, throughput, and product quality.
+          Pilot-scale systems coupled with simulation digital twins (Maxwell + heat transfer) to design and optimize cavities, trays, and processes.
         </p>
-        <div class="research-text">
-          <ul>
-            <li><strong>Microwave heating:</strong> solid-state and magnetron-based systems; Maxwell&rsquo;s equations coupled with transient heat transfer to design cavities and trays for uniform heating (e.g.,&nbsp;the MAPS digital twin shown above).</li>
-            <li><strong>Radio frequency (RF):</strong> RF-vacuum and hot-air&ndash;assisted RF systems for drying and pasteurization of fruits, nuts, and grains; simulation-guided uniformity and quality improvement.</li>
-          </ul>
-        </div>
       </div>
     </div>
 
     <!-- 4. Supply Chain -->
     <div class="research-card">
       <div class="research-media">
-        <img src="/assets/img/research/supply_chain.png" alt="Cold chain: production, cold storage, transportation, distribution, retail, last-mile delivery">
+        <img src="/assets/img/research/supply_chain.png" alt="Cold chain across production, storage, transportation, retail, delivery">
       </div>
       <div class="research-body">
         <h2 class="research-title">4. Food Supply Chain Digital Twin</h2>
 
         <div class="research-section-label">Goal</div>
         <p class="research-text">
-          Enable end-to-end visibility and decision support across food supply chains &mdash; from production and cold storage through transportation, distribution, retail, and last-mile delivery.
+          End-to-end visibility and decision support across food cold chains.
         </p>
 
         <div class="research-section-label">Approach</div>
         <p class="research-text">
-          We integrate IoT sensing, digital-twin modeling, and data-driven analytics to track and optimize food quality, safety, and sustainability across the chain.
+          IoT sensors, digital-twin modeling, and analytics to track and optimize food quality, safety, and sustainability.
         </p>
-        <div class="research-text">
-          <ul>
-            <li><strong>IoT sensors:</strong> temperature, humidity, and quality monitoring across cold-chain nodes.</li>
-            <li><strong>Digital twin:</strong> connected models that mirror physical operations for real-time decision support.</li>
-            <li><strong>Analytics:</strong> data-driven insights to reduce loss, waste, and energy use.</li>
-          </ul>
-        </div>
-
-        <div class="research-status">
-          Selected outcomes appear in our <a href="/publications/">recent publications</a>; additional work is in progress.
-        </div>
       </div>
     </div>
 
