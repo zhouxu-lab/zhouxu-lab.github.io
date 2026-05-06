@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Research | Food Engineering & AI</title>
+  <meta name="description" content="Research - Zhou lab Food Engineering & AI">
+
+  <!-- Fonts and Icons -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons" />
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.20.0/css/mdb.min.css">
+
+  <link rel="icon" href="/assets/img/logo.jpg" type="image/jpeg">
+  <link rel="canonical" href="/research/">
+
+  <style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        color: #424242;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Roboto Slab', serif;
+    }
+    .navbar {
+        border-bottom: 1px solid #e0e0e0;
+        background-color: #fafafa !important;
+    }
+    /* Progress bar */
+    progress {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 5px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border: none;
+        background-color: transparent;
+        color: #0277bd;
+        z-index: 1040;
+    }
+    progress::-webkit-progress-bar { background-color: transparent; }
+    progress::-webkit-progress-value { background-color: #0277bd; }
+    progress::-moz-progress-bar { background-color: #0277bd; }
+
+    .content {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    .contact-icon a {
+        font-size: 1.5rem;
+        margin-right: 10px;
+        color: #424242;
+    }
+    .contact-icon a:hover { color: #0277bd; }
+    .nav-link { color: #424242 !important; }
+    .nav-item.navbar-active .nav-link { color: #000 !important; }
+    footer {
+        text-align: center;
+        padding: 20px 0;
+        font-size: 0.9rem;
+        color: #757575;
+        margin-top: 40px;
+        border-top: 1px solid #eee;
+    }
+
+    /* Research page */
+    .page-intro {
+        font-size: 1.05rem;
+        color: #555;
+        line-height: 1.7;
+        margin-bottom: 2.5rem;
+    }
+    .research-card {
+        background-color: #fff;
+        border: 1px solid #eee;
+        border-radius: 6px;
+        margin-bottom: 2.5rem;
+        overflow: hidden;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+        transition: box-shadow 0.2s ease, transform 0.2s ease;
+    }
+    .research-card:hover {
+        box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    }
+    .research-media {
+        background-color: #fafafa;
+        text-align: center;
+    }
+    .research-media img,
+    .research-media video {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .research-media .media-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+    }
+    .research-media .media-row > * {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .media-caption {
+        font-size: 0.82rem;
+        color: #757575;
+        padding: 6px 12px 4px;
+        text-align: center;
+        background-color: #fafafa;
+        border-top: 1px solid #eee;
+    }
+    .research-body {
+        padding: 1.5rem 1.75rem 1.75rem;
+    }
+    .research-title {
+        font-weight: 700;
+        font-size: 1.55rem;
+        margin-bottom: 1rem;
+        color: #212121;
+    }
+    .research-section-label {
+        text-transform: uppercase;
+        font-size: 0.78rem;
+        letter-spacing: 0.1em;
+        font-weight: 700;
+        color: #0277bd;
+        margin-top: 1rem;
+        margin-bottom: 0.4rem;
+        font-family: 'Roboto', sans-serif;
+    }
+    .research-text {
+        line-height: 1.65;
+        margin-bottom: 0.5rem;
+    }
+    .research-text ul {
+        padding-left: 1.2rem;
+        margin-bottom: 0;
+    }
+    .research-text ul li {
+        margin-bottom: 0.25rem;
+    }
+    .research-status {
+        margin-top: 1.25rem;
+        padding: 0.6rem 0.9rem;
+        background-color: #f1f8fb;
+        border-left: 3px solid #0277bd;
+        font-size: 0.92rem;
+        color: #555;
+        font-style: italic;
+    }
+    @media (max-width: 600px) {
+        .research-media .media-row {
+            grid-template-columns: 1fr;
+        }
+        .research-body { padding: 1.25rem; }
+        .research-title { font-size: 1.3rem; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <nav id="navbar" class="navbar fixed-top navbar-expand-md grey lighten-5 z-depth-1 navbar-light">
+    <div class="container-fluid p-0">
+
+        <div class="row ml-1 ml-sm-0">
+          <span class="contact-icon text-center" style="line-height: 1em;">
+            <a href="mailto:xbz5414@psu.edu"><i class="fa fa-envelope-square gm-icon"></i></a>
+            <a href="https://scholar.google.com/citations?hl=en&user=CmiibAMAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar-square gs-icon"></i></a>
+            <a href="https://github.com/zhouxu-lab" target="_blank" title="GitHub"><i class="fab fa-github-square gh-icon"></i></a>
+            <a href="https://www.linkedin.com/in/xu-zhou-a86939203/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin li-icon"></i></a>
+          </span>
+        </div>
+
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <li class="nav-item ">
+            <a class="nav-link" href="/">About</a>
+          </li>
+
+          <li class="nav-item navbar-active font-weight-bold">
+              <a class="nav-link" href="/research/">
+                Research
+                <span class="sr-only">(current)</span>
+              </a>
+          </li>
+
+          <li class="nav-item ">
+              <a class="nav-link" href="/publications/">Publications</a>
+          </li>
+
+          <li class="nav-item ">
+              <a class="nav-link" href="/teaching/">Teaching</a>
+          </li>
+
+          <li class="nav-item ">
+              <a class="nav-link" href="/team/">Team</a>
+          </li>
+
+          <li class="nav-item ">
+              <a class="nav-link" href="/positions/">Available Positions</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Scrolling Progress Bar -->
+  <progress id="progress" value="0">
+    <div class="progress-container">
+      <span class="progress-bar"></span>
+    </div>
+  </progress>
+
+  <!-- Content -->
+  <div class="content">
+    <div class="col p-0 pt-4 pb-4">
+      <h1 class="title text-left font-weight-bold">Research</h1>
+    </div>
+
+    <p class="page-intro">
+      Our group develops advanced food processing technologies and computational methods for next-generation food manufacturing. We integrate sensing, multi-physics simulation, machine learning, and robotics to build digital twins of food processes and supply chains. Below are four current research thrusts.
+    </p>
+
+    <!-- 1. AI Agents -->
+    <div class="research-card">
+      <div class="research-media">
+        <img src="/assets/img/research/ai_agents.png" alt="AI agents architectures: equi-level, hierarchical, and nested structures">
+      </div>
+      <div class="research-body">
+        <h2 class="research-title">1. AI Agents for Food Applications</h2>
+
+        <div class="research-section-label">Goal</div>
+        <p class="research-text">
+          Design AI agent systems tailored for food science and engineering &mdash; supporting research workflows, decision-making, and knowledge synthesis across food domains.
+        </p>
+
+        <div class="research-section-label">Approach</div>
+        <p class="research-text">
+          We are exploring multi-agent architectures (equi-level, hierarchical, and nested) that coordinate specialized agents to perform complex tasks in food research and development.
+        </p>
+
+        <div class="research-status">
+          Manuscripts and proposals are currently under development; multiple papers are under review.
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. Digital Extruder -->
+    <div class="research-card">
+      <div class="research-media">
+        <img src="/assets/img/research/digital_extruder.png" alt="Digital extruder: raw ingredients to extrusion to simulation and final products">
+      </div>
+      <div class="research-body">
+        <h2 class="research-title">2. Digital Extruder</h2>
+
+        <div class="research-section-label">Goal</div>
+        <p class="research-text">
+          Build a digital twin of food extrusion processes that links raw-ingredient properties &rarr; process conditions &rarr; final product attributes (texture, flavor, nutrition, bioactives), enabling formulation and process optimization.
+        </p>
+
+        <div class="research-section-label">Approach</div>
+        <p class="research-text">
+          We couple mechanistic multi-physics models (heat transfer, flow, transport) with generative AI and machine-learning surrogates to capture the full extrusion pathway:
+        </p>
+        <div class="research-text">
+          <ul>
+            <li><strong>Sensing &amp; data:</strong> ingredient thermal/rheological/chemical properties and in-line process data.</li>
+            <li><strong>Modeling:</strong> mechanistic digital twins coupled with generative AI and ML surrogates (NN, XGBoost, SVM) for fast prediction.</li>
+            <li><strong>Optimization:</strong> closed-loop insights and feedback to improve product quality and reduce trial-and-error.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Microwave and RF Heating -->
+    <div class="research-card">
+      <div class="research-media">
+        <video controls preload="metadata" poster="/assets/img/research/maps_poster.jpg" muted playsinline>
+          <source src="/assets/img/research/maps.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="media-caption">Microwave-assisted thermal pasteurization (MAPS): physical system &harr; digital-twin simulation</div>
+        <img src="/assets/img/research/rf.jpg" alt="Radio-frequency drying: system, kinetics, and simulation of kiwifruit drying" style="margin-top: 2px;">
+        <div class="media-caption">Radio-frequency (RF) drying: system design, kinetics, and computer-simulated heating uniformity</div>
+      </div>
+      <div class="research-body">
+        <h2 class="research-title">3. Microwave and RF Heating</h2>
+
+        <div class="research-section-label">Goal</div>
+        <p class="research-text">
+          Design uniform, energy-efficient electromagnetic heating systems for food pasteurization, sterilization, and drying &mdash; replacing slow, energy-intensive conventional thermal processes.
+        </p>
+
+        <div class="research-section-label">Approach</div>
+        <p class="research-text">
+          We combine pilot-scale physical systems with computer-simulation digital twins to predict and improve heating uniformity, throughput, and product quality.
+        </p>
+        <div class="research-text">
+          <ul>
+            <li><strong>Microwave heating:</strong> solid-state and magnetron-based systems; Maxwell&rsquo;s equations coupled with transient heat transfer to design cavities and trays for uniform heating (e.g.,&nbsp;the MAPS digital twin shown above).</li>
+            <li><strong>Radio frequency (RF):</strong> RF-vacuum and hot-air&ndash;assisted RF systems for drying and pasteurization of fruits, nuts, and grains; simulation-guided uniformity and quality improvement.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. Supply Chain -->
+    <div class="research-card">
+      <div class="research-media">
+        <img src="/assets/img/research/supply_chain.png" alt="Cold chain: production, cold storage, transportation, distribution, retail, last-mile delivery">
+      </div>
+      <div class="research-body">
+        <h2 class="research-title">4. Food Supply Chain Digital Twin</h2>
+
+        <div class="research-section-label">Goal</div>
+        <p class="research-text">
+          Enable end-to-end visibility and decision support across food supply chains &mdash; from production and cold storage through transportation, distribution, retail, and last-mile delivery.
+        </p>
+
+        <div class="research-section-label">Approach</div>
+        <p class="research-text">
+          We integrate IoT sensing, digital-twin modeling, and data-driven analytics to track and optimize food quality, safety, and sustainability across the chain.
+        </p>
+        <div class="research-text">
+          <ul>
+            <li><strong>IoT sensors:</strong> temperature, humidity, and quality monitoring across cold-chain nodes.</li>
+            <li><strong>Digital twin:</strong> connected models that mirror physical operations for real-time decision support.</li>
+            <li><strong>Analytics:</strong> data-driven insights to reduce loss, waste, and energy use.</li>
+          </ul>
+        </div>
+
+        <div class="research-status">
+          Selected outcomes appear in our <a href="/publications/">recent publications</a>; additional work is in progress.
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; Copyright 2026 Xu Zhou
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.20.0/js/mdb.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      var navbarHeight = $('#navbar').outerHeight(true);
+      $('body').css({ 'padding-top': navbarHeight });
+
+      var progressBar = $('#progress');
+      progressBar.css({ 'top': navbarHeight });
+      var getMax = function() { return $(document).height() - $(window).height(); }
+      var getValue = function() { return $(window).scrollTop(); }
+
+      if ('max' in document.createElement('progress')) {
+        progressBar.attr({ max: getMax() });
+        progressBar.attr({ value: getValue() });
+
+        $(document).on('scroll', function() {
+          progressBar.attr({ value: getValue() });
+        });
+
+        $(window).resize(function() {
+          var navbarHeight = $('#navbar').outerHeight(true);
+          $('body').css({ 'padding-top': navbarHeight });
+          progressBar.css({ 'top': navbarHeight });
+          progressBar.attr({ max: getMax(), value: getValue() });
+        });
+      }
+    });
+  </script>
+</body>
+</html>
