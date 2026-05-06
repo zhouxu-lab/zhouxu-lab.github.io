@@ -52,9 +52,18 @@
     progress::-moz-progress-bar { background-color: #0277bd; }
 
     .content {
-        max-width: 1000px;
+        max-width: 1200px;
         margin: 0 auto;
         padding: 0 15px;
+    }
+    .research-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.75rem;
+        align-items: start;
+    }
+    @media (max-width: 800px) {
+        .research-grid { grid-template-columns: 1fr; }
     }
     .contact-icon a {
         font-size: 1.5rem;
@@ -84,7 +93,6 @@
         background-color: #fff;
         border: 1px solid #eee;
         border-radius: 6px;
-        margin-bottom: 2.5rem;
         overflow: hidden;
         box-shadow: 0 1px 3px rgba(0,0,0,0.04);
         transition: box-shadow 0.2s ease, transform 0.2s ease;
@@ -110,6 +118,25 @@
     .research-media .media-row > * {
         width: 100%;
         height: 100%;
+        object-fit: cover;
+    }
+    .dual-media {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2px;
+        background-color: #eee;
+    }
+    .dual-media-cell {
+        background-color: #fafafa;
+        display: flex;
+        flex-direction: column;
+    }
+    .dual-media-cell video,
+    .dual-media-cell img {
+        width: 100%;
+        height: auto;
+        display: block;
+        flex: 1;
         object-fit: cover;
     }
     .media-caption {
@@ -235,6 +262,8 @@
       Our group develops advanced food processing technologies and computational methods for next-generation food manufacturing. We integrate sensing, multi-physics simulation, machine learning, and robotics to build digital twins of food processes and supply chains. Below are four current research thrusts.
     </p>
 
+    <div class="research-grid">
+
     <!-- 1. AI Agents -->
     <div class="research-card">
       <div class="research-media">
@@ -289,13 +318,19 @@
     <!-- 3. Microwave and RF Heating -->
     <div class="research-card">
       <div class="research-media">
-        <video controls preload="metadata" poster="/assets/img/research/maps_poster.jpg" muted playsinline>
-          <source src="/assets/img/research/maps.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <div class="media-caption">Microwave-assisted thermal pasteurization (MAPS): physical system &harr; digital-twin simulation</div>
-        <img src="/assets/img/research/rf.jpg" alt="Radio-frequency drying: system, kinetics, and simulation of kiwifruit drying" style="margin-top: 2px;">
-        <div class="media-caption">Radio-frequency (RF) drying: system design, kinetics, and computer-simulated heating uniformity</div>
+        <div class="dual-media">
+          <div class="dual-media-cell">
+            <video controls preload="metadata" poster="/assets/img/research/maps_poster.jpg" muted playsinline>
+              <source src="/assets/img/research/maps.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="media-caption">Microwave: MAPS digital twin</div>
+          </div>
+          <div class="dual-media-cell">
+            <img src="/assets/img/research/rf.jpg" alt="Radio-frequency drying">
+            <div class="media-caption">RF drying: system &amp; simulation</div>
+          </div>
+        </div>
       </div>
       <div class="research-body">
         <h2 class="research-title">3. Microwave and RF Heating</h2>
@@ -348,6 +383,8 @@
         </div>
       </div>
     </div>
+
+    </div><!-- /.research-grid -->
 
   </div>
 
