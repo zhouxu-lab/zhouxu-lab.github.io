@@ -111,6 +111,17 @@
         object-fit: contain;
         background-color: #fafafa;
         display: block;
+        /* Mild copy protection: block drag-to-desktop and selection */
+        -webkit-user-drag: none;
+        -khtml-user-drag: none;
+        -moz-user-drag: none;
+        -o-user-drag: none;
+        user-drag: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-touch-callout: none;
     }
     .research-media > img + img,
     .research-media > video + img,
@@ -367,6 +378,12 @@
           progressBar.attr({ max: getMax(), value: getValue() });
         });
       }
+
+      // Mild copy protection on research images and video:
+      // block right-click context menu and drag-start
+      $('.research-media img, .research-media video').on('contextmenu dragstart', function(e) {
+        e.preventDefault();
+      });
     });
   </script>
 </body>
