@@ -8,6 +8,13 @@
   },
   "members": [
     {
+      "name": "Karch Klos",
+      "role": "Master's Student",
+      "email": "kak7030@psu.edu",
+      "photo": "/assets/img/team/karch_klos.jpg",
+      "research": "AI and supply chains"
+    },
+    {
       "name": "Member Name",
       "role": "Postdoctoral Scholar",
       "email": "email@psu.edu",
@@ -17,13 +24,6 @@
     {
       "name": "Member Name",
       "role": "Ph.D. Student",
-      "email": "email@psu.edu",
-      "photo": "",
-      "research": "[Research Description]"
-    },
-    {
-      "name": "Member Name",
-      "role": "Master Student",
       "email": "email@psu.edu",
       "photo": "",
       "research": "[Research Description]"

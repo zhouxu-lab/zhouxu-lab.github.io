@@ -100,6 +100,30 @@
     .about-section {
         margin-bottom: 2rem;
     }
+    .news {
+        font-size: 0.9rem; /* slightly smaller than the intro text */
+    }
+    .news .row {
+        margin-bottom: 0.25rem;
+    }
+    .news .text p {
+        margin-bottom: 0.5rem;
+        font-size: 0.9rem;
+    }
+    .news .badge.date {
+        text-transform: none; /* keep "August", not "AUGUST" */
+        font-size: 0.75rem;
+    }
+    .news-scroll {
+        max-height: 280px; /* fixed window; scrolls as news grows */
+        overflow-y: auto;
+        overflow-x: hidden; /* vertical scrolling only */
+        padding-right: 10px;
+    }
+    .news-scroll .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
   </style>
 </head>
 <body>
@@ -215,26 +239,69 @@
 <!-- News -->
 <div class="news mt-3 p-0">
   <h1 class="title mb-4 p-0">News</h1>
-  
-  
+
+  <div class="news-scroll">
+
     <div class="row p-0">
       <div class="col-sm-2 p-0">
-        <span class="badge light-blue darken-1 font-weight-bold text-uppercase align-middle date ml-3">
+        <span class="badge light-blue darken-1 font-weight-bold align-middle date ml-3">
+          August, 2026
+        </span>
+      </div>
+      <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">
+        <p>Karch Klos joins the Zhou Lab as a Master's student! He will work on AI and supply chains. Welcome, Karch!</p>
+      </div>
+    </div>
+
+    <div class="row p-0">
+      <div class="col-sm-2 p-0">
+        <span class="badge light-blue darken-1 font-weight-bold align-middle date ml-3">
+          August, 2026
+        </span>
+      </div>
+      <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">
+        <p>Dr. Zhou is appointed Assistant Editor of <a href="https://www.sciencedirect.com/journal/food-research-international" target="_blank" rel="noopener">Food Research International</a>.</p>
+      </div>
+    </div>
+
+    <div class="row p-0">
+      <div class="col-sm-2 p-0">
+        <span class="badge light-blue darken-1 font-weight-bold align-middle date ml-3">
+          July, 2026
+        </span>
+      </div>
+      <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">
+        <p>Dr. Zhou is appointed Co-Chair of the Technical Program Committee for the <a href="https://impi.org/" target="_blank" rel="noopener">IMPI</a> Symposium 2027 in Seattle (June 22&ndash;24, 2027).</p>
+      </div>
+    </div>
+
+    <div class="row p-0">
+      <div class="col-sm-2 p-0">
+        <span class="badge light-blue darken-1 font-weight-bold align-middle date ml-3">
           June, 2025
         </span>
       </div>
       <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">
-        <p>Dr. Xu Zhou will join Food Science, Penn State.
-</p>
+        <p>Dr. Zhou gives an invited talk on AI and microwave heating at the <a href="https://impi.org/" target="_blank" rel="noopener">IMPI</a> Symposium.</p>
       </div>
     </div>
-  
-   
+
+    <div class="row p-0">
+      <div class="col-sm-2 p-0">
+        <span class="badge light-blue darken-1 font-weight-bold align-middle date ml-3">
+          June, 2025
+        </span>
+      </div>
+      <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">
+        <p>Dr. Zhou joins the Department of Food Science at Penn State.</p>
       </div>
     </div>
-  
+
+  </div>
 </div>
 
+    </div>
+</div>
 
   </div>
 

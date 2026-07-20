@@ -1,8 +1,28 @@
 {
   "items": [
     {
+      "date": "August, 2026",
+      "text": "Karch Klos joins the Zhou Lab as a Master's student! He will work on AI and supply chains. Welcome, Karch!",
+      "link": ""
+    },
+    {
+      "date": "August, 2026",
+      "text": "Dr. Zhou is appointed Assistant Editor of Food Research International.",
+      "link": "https://www.sciencedirect.com/journal/food-research-international"
+    },
+    {
+      "date": "July, 2026",
+      "text": "Dr. Zhou is appointed Co-Chair of the Technical Program Committee for the IMPI Symposium 2027 in Seattle (June 22–24, 2027).",
+      "link": "https://impi.org/"
+    },
+    {
       "date": "June, 2025",
-      "text": "Dr. Xu Zhou will join Food Science, Penn State.",
+      "text": "Dr. Zhou gives an invited talk on AI and microwave heating at the IMPI Symposium.",
+      "link": "https://impi.org/"
+    },
+    {
+      "date": "June, 2025",
+      "text": "Dr. Zhou joins the Department of Food Science at Penn State.",
       "link": ""
     }
   ]
